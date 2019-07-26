@@ -42,7 +42,7 @@
                     <form action="enviahomepage.php" method="post">
                         <center><label type="text" style="color: #003333"><h3><b>Participe da nossa pesquisa! <br> Estará nos ajudando muito.</b></h3> <br> 
                                 * Para participar, responda esse simples formulário</label></center>
-                                                <div class="form-group">
+                        <div class="form-group">
                             <label for="exampleInputEmail1">Nome completo</label>
                             <input type="text" class="form-control" name="nome" id="nome" aria-describedby="emailHelp" placeholder="Nome completo">
                             <small id="emailHelp" class="form-text text-muted"></small>
@@ -61,26 +61,44 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Possui MEI?</label>
-                            <input type="text" class="form-control" name="pergunta1" id="pergunta1" aria-describedby="emailHelp" placeholder="Nome completo">
-                            <small id="emailHelp" class="form-text text-muted"></small>
+                            <label for="exampleInputEmail1">Possui MEI?</label><br>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-info ">
+                                    <input type="radio" name="pergunta1" id="pergunta1" autocomplete="off" value="sim"> <label style="color:black; width: 100px; height: 15px">Sim</label> 
+                                </label>
+                                <label class="btn btn-info">
+                                    <input type="radio" name="pergunta1" id="pergunta1" autocomplete="off"  value="nao"> <label style="color:black; width: 100px; height: 15px">Não</label> 
+                                </label>
+                            </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Utiliza o MEI para gerar notas fiscais?</label>
-                            <input type="text" class="form-control" name="pergunta2" id="pergunta2" aria-describedby="emailHelp" placeholder="Nome completo">
-                            <small id="emailHelp" class="form-text text-muted"></small>
+                            <label for="exampleInputEmail1">Utiliza o MEI para gerar notas fiscais?</label><br>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-info ">
+                                    <input type="radio" name="pergunta2" id="sim" pergunta2="off" value="sim" st> <label style="color:black; width: 100px; height: 15px">Sim</label> 
+                                </label>
+                                <label class="btn btn-info">
+                                    <input type="radio" name="pergunta2" id="pergunta2" autocomplete="off" value="nao"> <label style="color:black; width: 100px; height: 15px">Não</label> 
+                                </label>
+                            </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Você utilizaria o software?</label>
-                            <input type="text" class="form-control" name="pergunta3" id="pergunta3" aria-describedby="emailHelp" placeholder="Nome completo">
-                            <small id="emailHelp" class="form-text text-muted"></small>
+                            <label for="exampleInputEmail1">Você utilizaria o software?</label><br>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-info ">
+                                    <input type="radio" name="pergunta3" id="pergunta3" value="sim" autocomplete="off"> <label style="color:black; width: 100px; height: 15px">Sim</label> 
+                                </label>
+                                <label class="btn btn-info">
+                                    <input type="radio" name="pergunta3" id="pergunta3" value="nao" autocomplete="off"> <label style="color:black; width: 100px; height: 15px">Não</label> 
+                                </label>
+                            </div>
                         </div>
-                        
-                        <button type="submit" class="btn btn-primary">Enviar Resposta</button>
+                        <br>
+                        <button type="submit" class="btn btn-success btn-block">Enviar Resposta</button>
                     </form>
-					
+
                 </div>
             </div>
         </div>
