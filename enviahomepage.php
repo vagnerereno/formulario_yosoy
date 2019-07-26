@@ -39,47 +39,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <form action="homepage.php" method="post">
-                        <center><label type="text" style="color: #003333"><h3><b>Participe da nossa pesquisa! <br> Estará nos ajudando muito.</b></h3> <br> 
-                                * Para participar, responda esse simples formulário</label></center>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Nome completo</label>
-                            <input type="email" class="form-control" name="nome" id="nome" aria-describedby="emailHelp" placeholder="Nome completo">
-                            <small id="emailHelp" class="form-text text-muted"></small>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Telefone</label>
-                            <input type="email" class="form-control" name="telefone" id="telefone" aria-describedby="emailHelp" placeholder="Nome completo">
-                            <small id="emailHelp" class="form-text text-muted"></small>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">E-mail</label>
-                            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Nome completo">
-                            <small id="emailHelp" class="form-text text-muted"></small>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Possui MEI?</label>
-                            <input type="email" class="form-control" name="pergunta1" id="pergunta1" aria-describedby="emailHelp" placeholder="Nome completo">
-                            <small id="emailHelp" class="form-text text-muted"></small>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Utiliza o MEI para gerar notas fiscais?</label>
-                            <input type="email" class="form-control" name="pergunta2" id="pergunta2" aria-describedby="emailHelp" placeholder="Nome completo">
-                            <small id="emailHelp" class="form-text text-muted"></small>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Você utilizaria o software?</label>
-                            <input type="email" class="form-control" name="pergunta3" id="pergunta3" aria-describedby="emailHelp" placeholder="Nome completo">
-                            <small id="emailHelp" class="form-text text-muted"></small>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Enviar Resposta</button>
-                    </form>
+                    <br><br>
                     <!--envio ao banco -->
 
                     <?php
@@ -98,9 +58,18 @@
 
                     mysqli_query($conectar, $sql) or die('Error' . mysqli_error($conectar));
 
-                    echo"<br><br><center><h4>Cadastro Realizado com Sucesso!!</h4></center>"
+                    echo"<br><br><center><h4>Formulário registrado! <br> <br></h4></center>"
                     ?>
                     <!--fim envio -->
+
+                    <center>
+                        <label type="text" style="color: #003333"><h3><b>Obrigado por participar :) <br> Sua contribuição é de suma importância para nós.</b></h3> <br> 
+                            Até a próxima!</label>
+                        <img src="emoticon.png" width="100px">
+                        <br><br><br>
+                        <a href="homepage.php" class="btn btn-primary btn-lg active" role="button">Responder novamente</a>
+                    </center>
+
                 </div>
             </div>
         </div>
