@@ -38,9 +38,9 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4" style="background-image: url(backgroundformulario.png); color: white" >
                     <form action="enviahomepage.php" method="post">
-                        <center><label type="text" style="color: #003333"><h3><b>Participe da nossa pesquisa! <br> Estará nos ajudando muito.</b></h3> <br> 
+                        <center><label type="text" style="color: white"><h3><b>Participe da nossa pesquisa! <br> Estará nos ajudando muito.</b></h3> <br> 
                                 * Para participar, responda esse simples formulário</label></center>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Nome completo</label>
@@ -61,7 +61,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Possui MEI?</label><br>
+                            <label for="exampleInputEmail1">Você já é um MEI (Microempreendedor individual)?</label><br>
                             <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                 <label class="btn btn-info ">
                                     <input type="radio" name="pergunta1" id="pergunta1" autocomplete="off" value="sim"> <label style="color:black; width: 100px; height: 15px">Sim</label> 
@@ -73,7 +73,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Utiliza o MEI para gerar notas fiscais?</label><br>
+                            <label for="exampleInputEmail1">Você emite notas fiscais para os serviços prestados?</label><br>
                             <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                 <label class="btn btn-info ">
                                     <input type="radio" name="pergunta2" id="sim" pergunta2="off" value="sim" st> <label style="color:black; width: 100px; height: 15px">Sim</label> 
@@ -85,7 +85,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Você utilizaria o software?</label><br>
+                            <label for="exampleInputEmail1">Você utilizaria o aplicativo para <b>oferecer</b> serviços?</label><br>
                             <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                 <label class="btn btn-info ">
                                     <input type="radio" name="pergunta3" id="pergunta3" value="sim" autocomplete="off"> <label style="color:black; width: 100px; height: 15px">Sim</label> 
@@ -95,8 +95,21 @@
                                 </label>
                             </div>
                         </div>
+                        
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Você utilizaria o aplicativo para solicitar serviços?</label><br>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-info ">
+                                    <input type="radio" name="pergunta4" id="pergunta4" value="sim" autocomplete="off"> <label style="color:black; width: 100px; height: 15px">Sim</label> 
+                                </label>
+                                <label class="btn btn-info">
+                                    <input type="radio" name="pergunta4" id="pergunta4" value="nao" autocomplete="off"> <label style="color:black; width: 100px; height: 15px">Não</label> 
+                                </label>
+                            </div>
+                        </div>
                         <br>
-                        <button type="submit" class="btn btn-success btn-block">Enviar Resposta</button>
+                        <button type="submit" class="btn btn-success btn-block"><b>Enviar Resposta</b></button>
+                        <br>
                     </form>
 
                 </div>

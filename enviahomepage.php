@@ -52,16 +52,17 @@
                     $pergunta1 = $_POST['pergunta1'];
                     $pergunta2 = $_POST['pergunta2'];
                     $pergunta3 = $_POST['pergunta3'];
+                    $pergunta4 = $_POST['pergunta4'];
 
 
-                    $sql = "INSERT INTO pesquisa (nome, telefone, email, pergunta1, pergunta2, pergunta3) VALUES ('$nome','$telefone', '$email', '$pergunta1', '$pergunta2', '$pergunta3')";
+                    $sql = "INSERT INTO pesquisa (nome, telefone, email, pergunta1, pergunta2, pergunta3, pergunta4) VALUES ('$nome','$telefone', '$email', '$pergunta1', '$pergunta2', '$pergunta3', '$pergunta4')";
 
                     mysqli_query($conectar, $sql) or die('Error' . mysqli_error($conectar));
 
-                    echo"<br><br><center><h4>Formulário registrado! <br> <br></h4></center>"
+//                    echo"<br><br><center><h4>Formulário registrado! <br> <br></h4></center>"
                     ?>
                     <!--fim envio -->
-
+                    <br><br>
                     <center>
                         <label type="text" style="color: #003333"><h3><b>Obrigado por participar :) <br> Sua contribuição é de suma importância para nós.</b></h3> <br> 
                             Até a próxima!</label>
